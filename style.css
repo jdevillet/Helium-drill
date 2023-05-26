@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-block: 0;
+  color: #fafafa;
+}
+
+body {
+  background: #1d1d1d;
+}
+/********** NAV **********/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 55px;
+}
+nav ul {
+  display: flex;
+  width: 50%;
+}
+nav h3 {
+  font-size: 1.8rem;
+}
+nav h3:hover {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+nav li {
+  padding: 20px 0;
+}
+
+/************ MAIN ************/
+
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin: 20px;
+  padding: 7px;
+}
+.container {
+  margin: 0 25px;
+}
+.container h1 {
+  font-size: 5rem;
+}
+.container h2 {
+  color: #484dff;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+.container p {
+  font-size: 0.8rem;
+}
+.main-img {
+  padding: 20px;
+  overflow: hidden;
+}
+.main-img img {
+  width: 50%;
+}
+#modem {
+  filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.318));
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  animation: modem 2.3s forwards;
+}
+@keyframes modem {
+  0% {
+    left: -110%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+/************ FOOTER ************/
+
+.footer {
+  background: rgb(10, 10, 10);
+  display: grid;
+  grid-template-columns: 33% 67%;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.footer-left {
+  padding: 0 15px 0 0;
+}
+.footer h4 {
+  font-size: 1.2rem;
+}
+.button {
+  width: 160px;
+}
+.button li {
+  margin: 5px;
+}
+.button button {
+  background: #484dff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  transition: 0.3s;
+}
+.button button:hover {
+  background: #2e35f4;
+  transform: scale(105%);
+}
+
+.investors {
+  display: flex;
+  height: 86%;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.logo img {
+  height: 60px;
+}
+/* **********REPSONSIVE********** */
+
+@media screen and (max-width: 960px) {
+  .container h1 {
+    font-size: 4rem;
+  }
+  .container h2 {
+    font-size: 1.6rem;
+  }
+  .investors {
+    padding: 10px 0 0 0;
+  }
+  .investors img {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+  .container h2 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  nav h3 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    width: 65%;
+  }
+  nav li {
+    font-size: 0.9rem;
+  }
+  .main {
+    display: block;
+  }
+  .main-img {
+    width: 80%;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .footer-left {
+    padding: 0 0 15px;
+  }
+  h4 {
+    padding: 0 0 10px;
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+  }
+  .investors img {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 457px) {
+  .container h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav h3 {
+    font-size: 1.2rem;
+  }
+  nav li {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+  .container h2 {
+    font-size: 1.1rem;
+  }
+  .investors img {
+    height: 20px;
+  }
+}
